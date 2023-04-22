@@ -1,5 +1,6 @@
 package com.example.REST;
 
+import com.example.REST.Services.LoggerService;
 import com.example.REST.domains.Account;
 import com.example.REST.domains.CreditCard;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,9 @@ public class RestApplication implements CommandLineRunner {
     @Autowired
 	AccountRepository accountRepository;
 
+	@Autowired
+	LoggerService loggerService;
+
 	public static void main(String[] args) {
 		SpringApplication.run(RestApplication.class, args);
 	}
@@ -24,6 +28,9 @@ public class RestApplication implements CommandLineRunner {
 		CreditCard creditCard1 = new CreditCard("12322", "Saving", "12/2028");
 		account.setCreditCard(creditCard1);
 
+		System.out.println("Looging here");
+        loggerService.addLoggingService();
+		loggerService.errorLog();
 
 
 
