@@ -1,4 +1,4 @@
-package com.example.REST.domain;
+package com.example.REST.domains;
 
 public class Greeting {
     private String content;

@@ -1,5 +1,5 @@
-package com.example.REST.repository;
-import com.example.REST.domain.Account;
+package com.example.REST.repositories;
+import com.example.REST.domains.Account;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

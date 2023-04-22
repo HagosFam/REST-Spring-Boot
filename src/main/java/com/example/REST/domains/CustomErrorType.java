@@ -1,4 +1,4 @@
-package com.example.REST.domain;
+package com.example.REST.domains;
 
 public class CustomErrorType {
     private String errorMessage;

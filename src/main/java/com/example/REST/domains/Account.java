@@ -1,10 +1,7 @@
-package com.example.REST.domain;
+package com.example.REST.domains;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.math.BigDecimal;
-import java.security.PublicKey;
 
 @Document
 public class Account {

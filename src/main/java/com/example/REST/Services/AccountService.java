@@ -1,7 +1,7 @@
 package com.example.REST.Services;
 
-import com.example.REST.domain.Account;
-import com.example.REST.repository.AccountRepository;
+import com.example.REST.domains.Account;
+import com.example.REST.repositories.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

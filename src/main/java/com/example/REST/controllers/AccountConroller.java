@@ -1,10 +1,10 @@
-package com.example.REST.controller;
+package com.example.REST.controllers;
 
 import com.example.REST.Services.AccountService;
-import com.example.REST.domain.Account;
-import com.example.REST.domain.CreditCard;
-import com.example.REST.domain.CustomErrorType;
-import com.example.REST.domain.Greeting;
+import com.example.REST.domains.Account;
+import com.example.REST.domains.CreditCard;
+import com.example.REST.domains.CustomErrorType;
+import com.example.REST.domains.Greeting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,6 +1,6 @@
 package com.example.REST.dtos;
 
-import com.example.REST.domain.Account;
+import com.example.REST.domains.Account;
 
 import java.util.ArrayList;
 import java.util.List;

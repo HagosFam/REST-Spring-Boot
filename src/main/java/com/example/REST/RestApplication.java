@@ -1,12 +1,12 @@
 package com.example.REST;
 
-import com.example.REST.domain.Account;
-import com.example.REST.domain.CreditCard;
+import com.example.REST.domains.Account;
+import com.example.REST.domains.CreditCard;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import com.example.REST.repository.AccountRepository;
+import com.example.REST.repositories.AccountRepository;
 
 @SpringBootApplication
 public class RestApplication implements CommandLineRunner {

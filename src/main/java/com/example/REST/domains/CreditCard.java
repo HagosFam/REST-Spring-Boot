@@ -1,8 +1,4 @@
-package com.example.REST.domain;
-
-import org.springframework.data.mongodb.core.annotation.Collation;
-
-import java.time.temporal.Temporal;
+package com.example.REST.domains;
 
 public class CreditCard {
     private String cardNumber;
