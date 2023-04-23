@@ -29,7 +29,7 @@ public class RestApplication implements CommandLineRunner {
 		account.setCreditCard(creditCard1);
 
 		System.out.println("Looging here");
-        loggerService.addLoggingService();
+        loggerService.addLoggingService(); // runs not on the console, it just runs along with application logs during running
 		loggerService.errorLog();
 
 
