@@ -1,8 +1,10 @@
 package com.example.REST;
 
+import com.example.REST.Services.EventServicePublisher;
 import com.example.REST.Services.LoggerService;
 import com.example.REST.domains.Account;
 import com.example.REST.domains.CreditCard;
+import com.example.REST.eventsAndSchedule.NewCustomerEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,6 +21,9 @@ public class RestApplication implements CommandLineRunner {
 	@Autowired
 	LoggerService loggerService;
 
+	@Autowired
+	EventServicePublisher evnt;
+
 	public static void main(String[] args) {
 		SpringApplication.run(RestApplication.class, args);
 	}
@@ -32,6 +37,8 @@ public class RestApplication implements CommandLineRunner {
         loggerService.addLoggingService(); // runs not on the console, it just runs along with application logs during running
 		loggerService.errorLog();
 
+	    // add customer event
+		evnt.addCustomer(new NewCustomerEvent("NEW CUSTOMER CREATED EVENT PUBLISHSED"));
 
 
 	}

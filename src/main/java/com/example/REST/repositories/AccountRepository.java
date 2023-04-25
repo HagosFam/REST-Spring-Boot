@@ -11,5 +11,8 @@ public interface AccountRepository extends MongoRepository<Account, Long> {
 //    List<Account> findByCreditCardType(String type);
 //    @Query("{email : :#{#email}}")
 //    Account findCustomerWithEmail(@Param("email") String email);
+    Account findByAccountHolderName(String accountHolderName);
+
+    Account findByAccountNumber(String accountNumber);
 
 }

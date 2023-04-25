@@ -12,7 +12,6 @@ public class EventServicePublisher {
 
     public void addCustomer(NewCustomerEvent events) {
         // do some tasks here
-        NewCustomerEvent event = new NewCustomerEvent(events,"User added");
-        publisher.publishEvent(event);
+        publisher.publishEvent(events);
     }
 }

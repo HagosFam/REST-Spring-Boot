@@ -16,7 +16,6 @@ public class AccountService {
         return this.accountRepository.findAll();
     }
 
-
     public void postAccount(Account account) {
         this.accountRepository.save(account);
     }

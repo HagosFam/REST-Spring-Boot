@@ -2,11 +2,10 @@ package com.example.REST.eventsAndSchedule;
 
 import org.springframework.context.ApplicationEvent;
 
-public class NewCustomerEvent extends ApplicationEvent {
+public class NewCustomerEvent {
     private String message;
 
-    public NewCustomerEvent(Object source, String msg) {
-        super(source);
+    public NewCustomerEvent( String msg) {
         this.message = msg;
     }
 
